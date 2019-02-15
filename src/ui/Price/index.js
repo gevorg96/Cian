@@ -38,7 +38,7 @@ function Price({ currency, price, children, size, color }) {
     const pr =  getValueByCurrency(price, currency)
     const cur = getCurrencySymbol(currency)
     return(
-        <Description size={size} color={color}>{cur}{pr}</Description>
+        <Description size={size} color={color} extraClass="price">{cur}{pr}</Description>
     )
 }
 
