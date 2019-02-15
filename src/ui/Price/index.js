@@ -47,4 +47,5 @@ Price.PropTypes = {
     value: PropTypes.number,
 };
 
+
 export { Price }
