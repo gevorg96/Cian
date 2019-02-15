@@ -1,0 +1,17 @@
+[
+  {
+    "description": "Изумрудный век",
+    "image": "houseOne",
+    "destination": "16",
+    "id": "17333",
+    "price": "5500000"
+  },
+  {
+    "description": "Успенское",
+    "image": "houseTwo",
+    "destination": "19",
+    "id": "17338",
+    "price": "900000"
+
+  }
+]

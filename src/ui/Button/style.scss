@@ -1,0 +1,39 @@
+.button{
+  border-radius: 25px;
+  height: 44px;
+  width: 200px;
+  color: #fff;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  margin-right: 50px;
+  &__style {
+    &_green{
+      background-color: #1ec659;
+    }
+    &_red{
+      background-color: red;
+    }
+  }
+  &__size{
+    &_s{
+      width: 160px;
+    }
+    &_n{
+      width: 260px;
+    }
+  }
+  &:disabled{
+    background-color: grey;
+  }
+  &:hover{
+    opacity: .8;
+    transition: .2s ease-in;
+  }
+  &:active {
+    opacity: .9;
+  }
+}

@@ -1,0 +1,16 @@
+@import './ui/Logo/style';
+@import './ui/Button/style';
+@import './ui/Layout/style';
+@import './ui/Description/style';
+@import './global/style';
+@import './widgets/Card/style';
+
+
+.app{
+  display: flex;
+  flex-direction: column;
+}
+header{
+  border-bottom: 1px solid #afadad;;
+}
+

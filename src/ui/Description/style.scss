@@ -1,0 +1,35 @@
+@import '../../global/style';
+
+.description{
+  font-size: 16px;
+  color: $default-color;
+
+  &__size{
+    &_s{
+      font-size: 12px;
+    }
+    &_m{
+      font-size: 16px;
+    }
+    &_l{
+      font-size: 20px;
+    }
+  }
+
+  &__color{
+    &_default{
+      color: $default-color;
+    }
+    &_accent{
+      color: $accent-color;
+    }
+  }
+  &__margin{
+    &_left{
+      margin-left: 10px;
+    }
+    &_left_x2{
+      margin-left: 20px;
+    }
+  }
+}

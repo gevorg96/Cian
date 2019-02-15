@@ -1,0 +1,41 @@
+.layout{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  &__orientation{
+    &_row{
+      flex-direction: row;
+    }
+    &_column{
+      flex-direction: column;
+    }
+  }
+  &__ai{
+    &_center{
+      align-items: center;
+    }
+    &_flex-end{
+      align-items: flex-end;
+    }
+    &_stretch{
+      align-items: stretch;
+    }
+    &_baseline{
+      align-items: baseline;
+    }
+  }
+  &__jc{
+    &_center{
+      justify-content: center;
+    }
+    &_flex-end{
+      justify-content: flex-end;
+    }
+    &_space-between{
+      justify-content: space-between;
+    }
+    &_space-around{
+      justify-content: space-around;
+    }
+  }
+}
