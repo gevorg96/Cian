@@ -4,14 +4,32 @@
     "image": "houseOne",
     "destination": "16",
     "id": "17333",
-    "price": "5500000"
+    "price": "5500000",
+    "additionInfo": {
+      "area": "20",
+      "metrics": "650"
+    }
   },
   {
     "description": "Успенское",
     "image": "houseTwo",
     "destination": "19",
     "id": "17338",
-    "price": "900000"
-
+    "price": "900000",
+    "additionInfo": {
+      "area": "15",
+      "metrics": "1000"
+    }
+  },
+  {
+    "description": "Никольская слобода",
+    "image": "houseTwo",
+    "destination": "9",
+    "id": "17339",
+    "price": "90000",
+    "additionInfo": {
+      "area": "30",
+      "metrics": "1500"
+    }
   }
 ]
