@@ -1,4 +1,5 @@
 import React from 'react';
+import cx from 'classnames';
 import { Description } from "../../ui/Description";
 import { Layout } from '../../ui/Layout';
 import { Price } from "../../ui/Price";
@@ -11,11 +12,11 @@ function Card({ img, alt, description, curr, price, id, destination, area, metri
     return(
         <Layout orientation="column" className="card">
             <img src={img} alt={alt}/>
-            <Description size="m" color="accent">{getCardTitle(description, destination, id)}</Description>
-            <Price currency={curr} color="default" price={price} size="l" />
-            <Layout orientation="row" ai="center" jc="space-between">
-                <Description>{`${area} coт`}</Description>
-                <Description>{`${metrics} м`}<sup>2</sup></Description>
+            <Description margin="top_x2" size="m" color="accent">{getCardTitle(description, destination, id)}</Description>
+            <Price margin="top" currency={curr} color="default" price={price} size="l" />
+            <Layout className="card__additional" orientation="row" ai="center" jc="space-between">
+                <Description extraClass={cx("card__info", "card__info_area")}>{`${area} coт`}</Description>
+                <Description extraClass={cx("card__info", "card__info_metrics")}>{`${metrics} м`}<sup>2</sup></Description>
             </Layout>
         </Layout>
     )

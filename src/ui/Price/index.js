@@ -34,11 +34,11 @@ function getValueByCurrency(value, currency) {
     return NaN;
 }
 
-function Price({ currency, price, children, size, color }) {
+function Price({ currency, price, margin, size, color }) {
     const pr =  getValueByCurrency(price, currency)
     const cur = getCurrencySymbol(currency)
     return(
-        <Description extraClass="price" size={size} color={color}>{cur}{pr}</Description>
+        <Description margin={margin} extraClass="price" size={size} color={color}>{cur}{pr}</Description>
     )
 }
 
