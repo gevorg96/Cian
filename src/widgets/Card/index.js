@@ -1,16 +1,23 @@
 import React from 'react';
+import cx from 'classnames';
 import { Description } from "../../ui/Description";
 import { Layout } from '../../ui/Layout';
 import { Price } from "../../ui/Price";
 
+function getCardTitle(description, destination, id) {
+    return `Дом в поселке "${description}", ${destination} км, ID ${id}`
+}
 
-
-function Card({ img, alt, description, curr, price }) {
+function Card({ img, alt, description, curr, price, id, destination, area, metrics }) {
     return(
-        <Layout jc="center" orientation="column" ai="center" className="card">
+        <Layout orientation="column" className="card">
             <img src={img} alt={alt}/>
-            <Price currency={curr} color="default" price={price} size="l" />
-            <Description size="1" color="accent">{description}</Description>
+            <Description margin="top_x2" size="m" color="accent">{getCardTitle(description, destination, id)}</Description>
+            <Price margin="top" currency={curr} color="default" price={price} size="l" />
+            <Layout className="card__additional" orientation="row" ai="center" jc="space-between">
+                <Description extraClass={cx("card__info", "card__info_area")}>{`${area} coт`}</Description>
+                <Description extraClass={cx("card__info", "card__info_metrics")}>{`${metrics} м`}<sup>2</sup></Description>
+            </Layout>
         </Layout>
     )
 }

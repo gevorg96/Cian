@@ -2,6 +2,7 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  width: 100%;
   &__orientation{
     &_row{
       flex-direction: row;

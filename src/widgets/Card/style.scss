@@ -1,0 +1,41 @@
+@import '../../global/style';
+
+
+@mixin beforeElem($backgroundImage, $top) {
+  &:before {
+    content: '';
+    position: absolute;
+    top: $top;
+    left: -25px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-image: url($backgroundImage);
+  }
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #e8e8e8;
+
+  &__info {
+    position: relative;
+    margin-left: 25px;
+    &_area {
+      @include beforeElem('../src/statics/logo.svg', -2px);
+    }
+    &_metrics {
+      @include beforeElem('../src/statics/icon1.svg', 3px);
+    }
+  }
+
+  &__additional {
+    margin-top: 15px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
