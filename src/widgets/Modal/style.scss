@@ -1,0 +1,27 @@
+.modal{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  background: rgba(0, 0, 0, 0.2);
+  align-items: center;
+  justify-content: center;
+
+  &__container{
+    position: relative;
+  }
+
+  &__inner{
+    background-color: #ffffff;
+    padding: 20px;
+    width: auto;
+  }
+
+  &__close{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+  }
+}

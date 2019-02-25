@@ -11,20 +11,21 @@ import PropTypes from 'prop-types';
  * @param disable
  * @constructor
  */
-function Button({children, bStyle, size, type, disable}) {
-    const className = cx("button", `button__style_${bStyle}`, `button__size_${size}`);
+function Button({children, bStyle, size, type, disable, onClick, extraClass}) {
+    const className = cx("button", `button__style_${bStyle}`, `button__size_${size}`, extraClass);
     return (
 
-        <button type={type} disable={disable} className={className}>{children}</button>
+        <button onClick={onClick} type={type} disabled={disable}  className={className}>{children}</button>
     )
 }
 
 Button.propTypes = {
     children: PropTypes.node.isRequired,
     bStyle: PropTypes.oneOf(['green', 'red']),
-    size: PropTypes.oneOf(['s', 'm']),
+    size: PropTypes.oneOf(['s', 'm', 'xs']),
     type: PropTypes.oneOf(['button', 'submit']),
     disabled: PropTypes.bool,
+    onClick: PropTypes.func
 };
 
 Button.defaultProps ={
@@ -32,6 +33,7 @@ Button.defaultProps ={
     size: 'm',
     type: 'button',
     disable: false,
+    onClick: i => 1,
 }
 
 export { Button };

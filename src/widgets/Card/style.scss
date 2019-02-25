@@ -1,4 +1,4 @@
-@import '../../global/style';
+@import "../../global/style";
 
 @mixin beforeElem($backgroundImage, $top) {
   &:before {
@@ -14,7 +14,6 @@
     background-image: url($backgroundImage);
   }
 }
-
 .card {
   padding: 20px;
   border: 1px solid #e8e8e8;
@@ -25,7 +24,6 @@
       @include beforeElem('../src/statics/logo.svg', -2px);
     }
     &_metrics{
-
       @include beforeElem('../src/statics/icon1.svg', 3px);
     }
   }
@@ -35,7 +33,6 @@
   }
 
   img{
-
     width: 100%;
   }
 }
