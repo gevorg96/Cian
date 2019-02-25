@@ -20,9 +20,11 @@ Description.propTypes = {
     margin: PropTypes.oneOfType([PropTypes.bool, PropTypes.string])
 }
 
+
 Description.defaultProps = {
     size: 'm',
-    color: 'default'
-}
+    color: 'default',
+    margin: false,
+};
 
 export { Description };

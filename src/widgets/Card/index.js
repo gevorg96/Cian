@@ -1,5 +1,5 @@
 import React from 'react';
-import cx from 'classnames'
+import cx from 'classnames';
 import { Description } from "../../ui/Description";
 import { Layout } from '../../ui/Layout';
 import { Price } from "../../ui/Price";
