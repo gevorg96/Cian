@@ -22,7 +22,8 @@ Description.propTypes = {
 
 Description.defaultProps = {
     size: 'm',
-    color: 'default'
-}
+    color: 'default',
+    margin: false,
+};
 
 export { Description };
