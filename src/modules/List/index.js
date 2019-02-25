@@ -9,22 +9,22 @@ function List() {
     return (
         <Layout jc="flex-start" orientation="row" className="list">
             {config.map(item => {
-                const { description, image, id, price, destination, additionInfo } = item;
-                const { area, metrics } = additionInfo;
+                const {description, image, id, price, destination, additionInfo} = item;
+                const {area, metrics} = additionInfo;
                 return (
                     <Card description={description}
-                          img={getImage(image)}
-                          alt={image}
-                          key={id}
-                          price={price}
-                          id={id}
-                          destination={destination}
-                          area={area}
-                          metrics={metrics}
-                          curr='USD'
+                            img={getImage(image)}
+                            alt={image}
+                            key={id}
+                            price={price}
+                            curr='USD'
+                            id = {id}
+                            destination={destination}
+                            area = {area}
+                            metrics = {metrics}
                     />
-                )
-            }
+                    )
+                }
             )}
         </Layout>
     )

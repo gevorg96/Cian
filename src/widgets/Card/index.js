@@ -5,7 +5,7 @@ import { Layout } from '../../ui/Layout';
 import { Price } from "../../ui/Price";
 
 function getCardTitle(description, destination, id) {
-    return `Дом в поселке "${description}", ${destination} км, ID ${id}`
+    return `Дом в посёлке "${description}", ${destination} км, ID ${id}`;
 }
 
 function Card({ img, alt, description, curr, price, id, destination, area, metrics }) {
@@ -22,4 +22,4 @@ function Card({ img, alt, description, curr, price, id, destination, area, metri
     )
 }
 
-export {Card}
+export { Card }

@@ -38,7 +38,7 @@ function Price({ currency, price, margin, size, color }) {
     const pr =  getValueByCurrency(price, currency)
     const cur = getCurrencySymbol(currency)
     return(
-        <Description margin={margin} extraClass="price" size={size} color={color}>{cur}{pr}</Description>
+        <Description margin={margin} size={size} color={color} extraClass="price">{cur}{pr}</Description>
     )
 }
 
@@ -46,5 +46,6 @@ Price.PropTypes = {
     currency: PropTypes.oneOf(['USD', 'EUR', 'RUB']),
     value: PropTypes.number,
 };
+
 
 export { Price }

@@ -1,6 +1,5 @@
 @import '../../global/style';
 
-
 @mixin beforeElem($backgroundImage, $top) {
   &:before {
     content: '';
@@ -19,23 +18,24 @@
 .card {
   padding: 20px;
   border: 1px solid #e8e8e8;
-
   &__info {
     position: relative;
     margin-left: 25px;
-    &_area {
+    &_area{
       @include beforeElem('../src/statics/logo.svg', -2px);
     }
-    &_metrics {
+    &_metrics{
+
       @include beforeElem('../src/statics/icon1.svg', 3px);
     }
   }
 
-  &__additional {
+  &__additional{
     margin-top: 15px;
   }
 
-  img {
+  img{
+
     width: 100%;
   }
 }

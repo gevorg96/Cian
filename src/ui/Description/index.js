@@ -17,8 +17,9 @@ Description.propTypes = {
     children: PropTypes.node.isRequired,
     size: PropTypes.oneOf(['s', 'm', 'l']),
     color: PropTypes.oneOf(['default', 'accent']),
-    margin: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
-};
+    margin: PropTypes.oneOfType([PropTypes.bool, PropTypes.string])
+}
+
 
 Description.defaultProps = {
     size: 'm',
