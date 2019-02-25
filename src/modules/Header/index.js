@@ -5,7 +5,7 @@ import { Description } from "../../ui/Description";
 import { Layout } from '../../ui/Layout';
 
 
-function Header() {
+function Header({ onButtonClick }) {
     return(
         <header>
             <Layout orientation="row" jc="space-between">
@@ -13,8 +13,8 @@ function Header() {
                     <Logo />
                 </Layout>
                 <Layout jc="flex-end" orientation="row" ai="center">
-                    <Description size="l" color="default">+7(495)9545785</Description>
-                    <Button bStyle='green' size='m' type='button'>Обратный звонок</Button>
+                    <Description size="l" margin="right_x2" color="default">+7(495)9545785</Description>
+                    <Button onClick={() => onButtonClick(true)} bStyle='green' size='m' type='button' >Обратный звонок</Button>
                 </Layout>
             </Layout>
         </header>

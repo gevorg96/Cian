@@ -9,7 +9,6 @@
   justify-content: center;
   border: none;
   outline: none;
-  margin-right: 50px;
   &__style {
     &_green{
       background-color: #1ec659;
@@ -22,8 +21,11 @@
     &_s{
       width: 160px;
     }
-    &_n{
+    &_m{
       width: 260px;
+    }
+    &_xs{
+      width: 44px;
     }
   }
   &:disabled{
